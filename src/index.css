@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+}
+
+@layer base {
+  :root {
+    --background: #f4f4f5; /* zinc-100 */
+    --foreground: #09090b; /* zinc-950 */
+    --card: #ffffff;
+    --card-foreground: #09090b;
+    --muted: #e4e4e7; /* zinc-200 */
+    --muted-foreground: #71717a; /* zinc-500 */
+    --accent: #18181b; /* zinc-900 */
+    --accent-foreground: #fafafa; /* zinc-50 */
+    --border: #d4d4d8; /* zinc-300 */
+  }
+
+  .dark {
+    --background: #09090b; /* zinc-950 */
+    --foreground: #fafafa; /* zinc-50 */
+    --card: #18181b; /* zinc-900 */
+    --card-foreground: #fafafa;
+    --muted: #27272a; /* zinc-800 */
+    --muted-foreground: #a1a1aa; /* zinc-400 */
+    --accent: #fafafa;
+    --accent-foreground: #18181b;
+    --border: #3f3f46; /* zinc-700 */
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+}

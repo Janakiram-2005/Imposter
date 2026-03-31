@@ -1,0 +1,5 @@
+{
+  "name": "Remix: Imposter Game",
+  "description": "A social deduction game where players must find the imposter among them based on a secret topic.",
+  "requestFramePermissions": []
+}
